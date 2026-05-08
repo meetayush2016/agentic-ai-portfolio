@@ -135,9 +135,18 @@
       lineOpacity: 0.12,
     };
 
+    function getTheme() {
+      return document.documentElement.getAttribute('data-theme') === 'dark';
+    }
+
     function getAccent() {
-      var dark = document.documentElement.getAttribute('data-theme') === 'dark';
-      return dark ? '129,140,248' : '99,102,241';
+      return getTheme() ? '129,140,248' : '99,102,241';
+    }
+
+    function getOpacity() {
+      return getTheme()
+        ? { dot: 0.45, line: 0.12 }
+        : { dot: 0.08, line: 0.03 };
     }
 
     function resize() {
@@ -173,6 +182,7 @@
     function draw() {
       ctx.clearRect(0, 0, W, H);
       var rgb = getAccent();
+      var op = getOpacity();
 
       /* Draw connections */
       for (var i = 0; i < particles.length; i++) {
@@ -181,7 +191,7 @@
           var dy = particles[i].y - particles[j].y;
           var dist = Math.sqrt(dx * dx + dy * dy);
           if (dist < CFG.lineDistance) {
-            var alpha = CFG.lineOpacity * (1 - dist / CFG.lineDistance);
+            var alpha = op.line * (1 - dist / CFG.lineDistance);
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
@@ -196,7 +206,7 @@
       for (var k = 0; k < particles.length; k++) {
         ctx.beginPath();
         ctx.arc(particles[k].x, particles[k].y, CFG.dotRadius, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(' + rgb + ',' + CFG.dotOpacity + ')';
+        ctx.fillStyle = 'rgba(' + rgb + ',' + op.dot + ')';
         ctx.fill();
       }
     }
