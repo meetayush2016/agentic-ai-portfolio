@@ -107,6 +107,7 @@ main {
   padding: clamp(4rem, 8vw, 7rem) 0;
   position: relative;
   z-index: 1;
+  background-color: var(--bg);
 }
 
 .section-alt {
