@@ -4,20 +4,19 @@
   /* ═══════════════════════════════════ THEME TOGGLE ══ */
   function initThemeToggle() {
     var btn = document.getElementById('theme-toggle');
+    if (!btn) return;
     var html = document.documentElement;
     var KEY = 'portfolio-theme';
 
-    var saved = localStorage.getItem(KEY);
-    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    var initial = saved || (prefersDark ? 'dark' : 'light');
-    html.setAttribute('data-theme', initial);
-    updateIcon(initial);
+    /* Theme is already set by the inline <head> script before CSS loaded.
+       Here we just sync the button icon and wire up the click handler. */
+    updateIcon(html.getAttribute('data-theme') || 'light');
 
     btn.addEventListener('click', function () {
-      var current = html.getAttribute('data-theme');
+      var current = html.getAttribute('data-theme') || 'light';
       var next = current === 'dark' ? 'light' : 'dark';
       html.setAttribute('data-theme', next);
-      localStorage.setItem(KEY, next);
+      try { localStorage.setItem(KEY, next); } catch (e) {}
       updateIcon(next);
     });
 
