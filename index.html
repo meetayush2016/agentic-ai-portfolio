@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ayush Sharma — DevOps Engineer specialising in AWS, Kubernetes, Terraform, CI/CD, and AI-powered infrastructure automation." />
+  <title>Ayush Sharma | DevOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Particle canvas — fixed, sits behind all content -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- ═══════════════════════════════════════ NAVBAR ═══ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Home">ayush.dev</a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Switch to dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button id="menu-toggle" class="icon-btn hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" role="menu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#about" role="menuitem">About</a></li>
+        <li><a href="#skills" role="menuitem">Skills</a></li>
+        <li><a href="#experience" role="menuitem">Experience</a></li>
+        <li><a href="#projects" role="menuitem">Projects</a></li>
+        <li><a href="#certifications" role="menuitem">Certifications</a></li>
+        <li><a href="#contact" role="menuitem">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════ HERO ═══ -->
+    <section id="hero">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-name">Ayush<br>Sharma</h1>
+        <p class="hero-title">DevOps Engineer</p>
+        <p class="hero-subtitle">Automating infrastructure. Shipping with confidence. Building with AI.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Work</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span>scroll</span>
+        <i class="fas fa-arrow-down"></i>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ ABOUT ═══ -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title" data-reveal>About</h2>
+        <div class="about-grid">
+          <div class="about-text" data-reveal>
+            <p>
+              I'm a DevOps Engineer at <strong>Cognizant Technology Solutions</strong>, where I architect
+              cloud infrastructure on AWS and Azure, build CI/CD pipelines, and automate everything that
+              can be automated. My foundation is a B.Tech in <strong>Computer Science with a specialisation
+              in Cybersecurity &amp; Digital Forensics</strong> — which means I think about security from
+              the ground up, not as an afterthought.
+            </p>
+            <p>
+              Beyond the day job, I've recently fallen hard for <strong>agentic AI</strong> — building
+              autonomous systems with the Claude API that can reason about infrastructure, decide on
+              remediation steps, and act on them. It's the intersection of DevOps and AI that I find
+              genuinely exciting, and I'm actively building in this space.
+            </p>
+            <a href="mailto:ayush.dev.2252@gmail.com" class="btn btn-primary">Email Me</a>
+          </div>
+          <div class="about-stats" data-reveal>
+            <div class="stat-card">
+              <span class="stat-num">1+</span>
+              <span class="stat-label">Years at Cognizant</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">DevOps Tools</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">4</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">58</span>
+              <span class="stat-label">GitHub Repos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ SKILLS ═══ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title" data-reveal>Skills</h2>
+        <div class="skills-grid">
+
+          <div class="skill-group" data-reveal>
+            <h3 class="skill-group-label">Cloud Platforms</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Azure</span>
+              <span class="skill-tag">EC2</span>
+              <span class="skill-tag">S3</span>
+              <span class="skill-tag">RDS</span>
+              <span class="skill-tag">EKS</span>
+              <span class="skill-tag">AKS</span>
+              <span class="skill-tag">Entra ID</span>
+            </div>
+          </div>
+
+          <div class="skill-group" data-reveal>
+            <h3 class="skill-group-label">IaC &amp; Config</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Terraform</span>
+              <span class="skill-tag">Ansible</span>
+              <span class="skill-tag">CloudFormation</span>
+            </div>
+          </div>
+
+          <div class="skill-group" data-reveal>
+            <h3 class="skill-group-label">Containers &amp; Orchestration</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Kubernetes</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Helm</span>
+              <span class="skill-tag">Docker Compose</span>
+              <span class="skill-tag">HPA</span>
+              <span class="skill-tag">Ingress</span>
+            </div>
+          </div>
+
+          <div class="skill-group" data-reveal>
+            <h3 class="skill-group-label">CI/CD</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">GitHub Actions</span>
+              <span class="skill-tag">Jenkins</span>
+              <span class="skill-tag">Git</span>
+            </div>
+          </div>
+
+          <div class="skill-group" data-reveal>
+            <h3 class="skill-group-label">Observability</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Prometheus</span>
+              <span class="skill-tag">Grafana</span>
+              <span class="skill-tag">CloudWatch</span>
+              <span class="skill-tag">Azure Monitor</span>
+            </div>
+          </div>
+
+          <div class="skill-group" data-reveal>
+            <h3 class="skill-group-label">Scripting &amp; OS</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Bash</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-group" data-reveal>
+            <h3 class="skill-group-label">Security</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Bug Bounty</span>
+              <span class="skill-tag">CTF</span>
+              <span class="skill-tag">IAM Hardening</span>
+              <span class="skill-tag">Cybersecurity</span>
+              <span class="skill-tag">Digital Forensics</span>
+            </div>
+          </div>
+
+          <div class="skill-group skill-group--ai" data-reveal>
+            <h3 class="skill-group-label">AI &amp; Agents <span class="badge-new">New</span></h3>
+            <div class="skill-tags">
+              <span class="skill-tag skill-tag--accent">Claude Code</span>
+              <span class="skill-tag skill-tag--accent">Claude API</span>
+              <span class="skill-tag skill-tag--accent">Agentic AI</span>
+              <span class="skill-tag skill-tag--accent">Tool Use</span>
+              <span class="skill-tag skill-tag--accent">Prompt Engineering</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ EXPERIENCE ═══ -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title" data-reveal>Experience</h2>
+        <div class="timeline">
+
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card">
+              <div class="timeline-meta">
+                <span class="timeline-company">Cognizant Technology Solutions</span>
+                <span class="timeline-period">Sep 2024 – Present</span>
+              </div>
+              <h3 class="timeline-role">DevOps Engineer</h3>
+              <ul class="timeline-bullets">
+                <li>Engineered reusable <strong>Terraform modules</strong> to automate provisioning of AWS resources (EC2, S3, RDS), ensuring consistency across environments.</li>
+                <li>Designed end-to-end <strong>CI/CD pipelines</strong> using GitHub Actions to streamline microservice deployments to AWS, reducing manual intervention in the release cycle.</li>
+                <li>Developed and executed <strong>Ansible playbooks</strong> to automate server hardening and application configurations, replacing manual setup with repeatable automation.</li>
+                <li>Built <strong>Python-based automation</strong> to identify unused AWS resources and over-privileged IAM roles, directly optimising cloud spend and security posture.</li>
+                <li>Established monitoring frameworks using <strong>Grafana and CloudWatch</strong>; designed custom alerting rules to reduce Mean Time to Detect (MTTD).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-reveal>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content card">
+              <div class="timeline-meta">
+                <span class="timeline-company">Cognizant Technology Solutions</span>
+                <span class="timeline-period">Jun 2024 – Sep 2024</span>
+              </div>
+              <h3 class="timeline-role">DevOps Intern</h3>
+              <ul class="timeline-bullets">
+                <li>Completed an intensive residency focused on <strong>AWS Cloud Architecture</strong>, Kubernetes orchestration, and automated pipeline development.</li>
+                <li>Designed and deployed a production-ready AWS environment as a capstone deliverable, demonstrating mastery in <strong>EKS and Infrastructure as Code</strong>.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ PROJECTS ═══ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title" data-reveal>Projects</h2>
+        <div class="projects-grid">
+
+          <article class="project-card card" data-reveal>
+            <div class="project-header">
+              <span class="project-category">Infrastructure</span>
+              <div class="project-links">
+                <a href="https://github.com/meetayush2016" target="_blank" rel="noopener" aria-label="View on GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">AWS EKS Scalable Infrastructure</h3>
+            <p class="project-desc">
+              Designed and deployed a production-ready high-availability AWS environment as a Cognizant capstone project.
+              Provisioned a multi-AZ VPC using Terraform modules with public/private subnets, NAT Gateways, and least-privilege
+              IAM roles. Managed an Amazon EKS cluster with Helm chart deployments and Horizontal Pod Autoscaling for dynamic
+              traffic scaling. Built a GitHub Actions pipeline that automates Docker image builds to ECR and triggers rolling
+              updates on every commit. Integrated AWS ALB Ingress Controller with Route53 for external traffic management.
+            </p>
+            <div class="project-stack">
+              <span>Terraform</span>
+              <span>Amazon EKS</span>
+              <span>Helm</span>
+              <span>GitHub Actions</span>
+              <span>Docker / ECR</span>
+              <span>ALB</span>
+              <span>Route53</span>
+            </div>
+          </article>
+
+          <article class="project-card card project-card--ai" data-reveal>
+            <div class="project-header">
+              <span class="project-category project-category--ai">AI / DevOps</span>
+              <div class="project-links">
+                <a href="https://github.com/meetayush2016" target="_blank" rel="noopener" aria-label="View on GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">InfraAgent — Autonomous Cloud Ops Assistant</h3>
+            <p class="project-desc">
+              An AI-powered remediation agent built with Python and the <strong>Claude API</strong>. InfraAgent listens to
+              AWS CloudWatch alarm state changes via EventBridge. When an anomaly fires, it queries Claude with enriched
+              context — metric history, recent logs, and affected resource metadata — and Claude uses <strong>tool use</strong>
+              to decide which Ansible playbook to invoke. The agent executes the playbook via subprocess, streams output in
+              real time, and posts a structured action summary to Slack. Every action is logged to DynamoDB with full playbook
+              diffs for audit trails. Built as a personal exploration into agentic AI applied to infrastructure operations.
+            </p>
+            <div class="project-stack">
+              <span>Python</span>
+              <span>Claude API</span>
+              <span>Boto3</span>
+              <span>Ansible</span>
+              <span>CloudWatch</span>
+              <span>EventBridge</span>
+              <span>DynamoDB</span>
+              <span>Slack API</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ CERTIFICATIONS ═══ -->
+    <section id="certifications" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title" data-reveal>Certifications</h2>
+        <div class="certs-grid">
+
+          <div class="cert-card card" data-reveal>
+            <div class="cert-icon cert-icon--aws">
+              <i class="fab fa-aws"></i>
+            </div>
+            <div class="cert-info">
+              <span class="cert-name">AWS Certified Cloud Practitioner</span>
+              <span class="cert-issuer">Amazon Web Services</span>
+            </div>
+            <span class="cert-badge">Verified</span>
+          </div>
+
+          <div class="cert-card card" data-reveal>
+            <div class="cert-icon cert-icon--ms">
+              <i class="fab fa-microsoft"></i>
+            </div>
+            <div class="cert-info">
+              <span class="cert-name">Azure Fundamentals AZ-900</span>
+              <span class="cert-issuer">Microsoft</span>
+            </div>
+            <span class="cert-badge">Verified</span>
+          </div>
+
+          <div class="cert-card card" data-reveal>
+            <div class="cert-icon cert-icon--ms">
+              <i class="fab fa-microsoft"></i>
+            </div>
+            <div class="cert-info">
+              <span class="cert-name">Identity &amp; Access Admin SC-300</span>
+              <span class="cert-issuer">Microsoft</span>
+            </div>
+            <span class="cert-badge">Verified</span>
+          </div>
+
+          <div class="cert-card card" data-reveal>
+            <div class="cert-icon cert-icon--ms">
+              <i class="fab fa-microsoft"></i>
+            </div>
+            <div class="cert-info">
+              <span class="cert-name">Azure AI Fundamentals AI-900</span>
+              <span class="cert-issuer">Microsoft</span>
+            </div>
+            <span class="cert-badge">Verified</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ CONTACT ═══ -->
+    <section id="contact" class="section">
+      <div class="container contact-container">
+        <h2 class="section-title" data-reveal>Let's Connect</h2>
+        <p class="contact-subtitle" data-reveal>
+          Open to DevOps roles, cloud consulting, and AI agent collaboration.<br>
+          Based in Noida, India — available globally.
+        </p>
+        <a href="mailto:ayush.dev.2252@gmail.com" class="btn btn-primary btn-lg" data-reveal>
+          <i class="fas fa-envelope"></i> Send an Email
+        </a>
+        <div class="social-links" data-reveal>
+          <a href="https://github.com/meetayush2016" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/itsayush2252/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://x.com/itsayush2252" target="_blank" rel="noopener" aria-label="Twitter / X" class="social-link">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Ayush Sharma</span>
+      <span>Built with HTML · CSS · JS · Docker · Nginx</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
